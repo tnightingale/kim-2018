@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <title>Big</title>
+  <link href='big.css' rel='stylesheet' type='text/css' />
+  <link href='highlight.css' rel='stylesheet' type='text/css' />
+  <style>
+    .new-shiny { background: #aaaaaa; }
+    .nobreak { white-space:pre; }
+    .center-image { background-position: top center; }
+    .text-centered { text-align: center; }
+    @keyframes blinker {
+      from { opacity: 1.0; }
+      to { opacity: 0.5; }
+    }
+    .blink {
+      animation-name: blinker;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+      animation-duration: 800ms;
+    }
+  </style>
+  <script src='big.js'></script>
+  <script src='highlight.js'></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body><!-- class='dark'> -->
+  <div data-time-to-next="3" class="text-centered"><p class="nobreak">Kimberly Fier</p><p>is...</p></div>
+  <div data-time-to-next="2">
+    <p class="nobreak"><span class="highlight">A</span>lways right,</p>
+    <!-- <br />
+    <p><em>adjective</em></p>
+    <ol>
+      <li>
+        morally good, justified, or acceptable.<br />
+        synonyms:	just, fair, proper, good, upright, righteous, virtuous, moral, ethical, honorable, honest
+      </li>
+      <li>
+        true or correct as a fact.</br>
+        synonyms:	correct, accurate, exact, precise
+      </li>
+    </ol> -->
+  </div>
+  <div data-time-to-next="2"><span class="highlight">B</span>eautiful,</div>
+  <div data-time-to-next="2"><span class="highlight">C</span>aring,</div>
+  <div data-time-to-next="2"><span class="highlight">D</span>evoted,</div>
+  <div data-time-to-next="2"><span class="highlight">E</span>xceptional,</div>
+  <div data-time-to-next="2"><span class="highlight">F</span>un,</div>
+  <div data-time-to-next="2"><span class="highlight">G</span>racious,</div>
+  <div data-time-to-next="2"><span class="highlight">H</span>onourable,</div>
+  <div data-time-to-next="2"><span class="highlight">I</span>ntelligent,</div>
+  <div data-time-to-next="2"><span class="highlight">J</span>oyful,</div>
+  <div data-time-to-next="2"><span class="highlight">K</span>nowledgable,</div>
+  <div data-time-to-next="2"><span class="highlight">L</span>oving,</div>
+  <div data-time-to-next="2"><span class="highlight">M</span>asterful,</div>
+  <div data-time-to-next="2"><span class="highlight">N</span>ourishing, </div>
+  <div data-time-to-next="2"><span class="nobreak"><span class="highlight">O</span>pen minded,</span></div>
+  <div data-time-to-next="2"><span class="highlight">P</span>ositive,</div>
+  <div data-time-to-next="2"><span class="highlight">Q</span>uick,</div>
+  <div data-time-to-next="2"><span class="highlight">R</span>espectful,</div>
+  <div data-time-to-next="2"><span class="highlight">S</span>anguine,</div>
+  <div data-time-to-next="2"><span class="highlight">T</span>rusting,</div>
+  <div data-time-to-next="2"><span class="highlight">U</span>nderstanding,</div>
+  <div data-time-to-next="2"><span class="highlight">V</span>iable,</div>
+  <div data-time-to-next="2"><span class="highlight">W</span>holesome,</div>
+  <div data-time-to-next="2">e<span class="highlight">X</span>treme,</div>
+  <div data-time-to-next="2"><span class="highlight">Y</span>OLO,</div>
+  <div data-time-to-next="4">and...</div>
+  <div data-time-to-next="2"><code>😬😬😬😬</code></div>
+  <div data-time-to-next="2">...<span class="highlight">Z</span>esty</div>
+  <div data-time-to-next="3" class="nobreak">In summary:</div>
+  <div data-time-to-next="3" class="nobreak text-centered">The BEST...</div>
+  <div data-time-to-next="3" class="nobreak text-centered">(future) mother-in-law...</div>
+  <div data-time-to-next="4" class="nobreak text-centered">anyone could <span class="blink">EVER</span> ask for!</div>
+  <div data-time-to-next="4" class="text-centered"><p class="nobreak">Happy birthday</p><p>Kim</p></div>
+  <div data-time-to-next="10"><p class="nobreak">with ❤️ from your #1 (future) son-in-law</p></div>
+  <div data-time-to-next="2" data-bodyclass="center-image" data-background-image="tom-animated.gif"></div>
+  <script src="randomColor.min.js"></script>
+  <script>
+    document.body.classList.add(pickRandom('light', 'dark'))
+    document.querySelectorAll('.highlight').forEach((n) => n.style.color = randomColor());
+
+    function pickRandom(...arr) {
+      const key = getRandomInt(0, arr.length);
+      return arr[key];
+    }
+
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+  </script>
+</body>
+</html>
