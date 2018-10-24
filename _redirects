@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://goofy-liskov-296517.netlify.com/* http://kimfier.rocks/:splat 301!
